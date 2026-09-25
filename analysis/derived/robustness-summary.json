@@ -1,0 +1,611 @@
+{
+  "comparison": {
+    "Omin": {
+      "literal": [
+        "ec-ser",
+        "gcm",
+        "hkdf",
+        "oaep",
+        "pss",
+        "rsa-ser"
+      ],
+      "safe": [
+        "ec-ser",
+        "gcm",
+        "pss",
+        "rsa-ser"
+      ]
+    },
+    "Rmin": {
+      "literal": {
+        "adequateSubsets": 4,
+        "minimumCardinality": 4,
+        "minimumFamily": [
+          [
+            "R_interop",
+            "R_ser",
+            "R_val",
+            "R_err"
+          ]
+        ]
+      },
+      "safe": {
+        "adequateSubsets": 2,
+        "core": [
+          "R_byte",
+          "R_err",
+          "R_interop",
+          "R_ser",
+          "R_val"
+        ],
+        "exchangeable": [],
+        "minimumCardinality": 5,
+        "minimumFamily": [
+          [
+            "R_byte",
+            "R_interop",
+            "R_ser",
+            "R_val",
+            "R_err"
+          ]
+        ]
+      }
+    },
+    "centralConclusionStable": true,
+    "hypotheses": {
+      "literal": {
+        "H1": "supported",
+        "H2": "supported",
+        "H3": "supported",
+        "H3thresholdSensitivity": {
+          "0.25": true,
+          "0.3333333333333333": true,
+          "0.5": true
+        }
+      },
+      "safe": {
+        "H1": "supported",
+        "H2": "supported",
+        "H3": "supported",
+        "H3details": {
+          "detected": 57,
+          "marginal": true,
+          "operations": [
+            "ec-ser",
+            "gcm",
+            "hkdf",
+            "oaep",
+            "pss",
+            "rsa-ser"
+          ],
+          "ratio": 0.7894736842105263,
+          "svecDetected": 45
+        }
+      }
+    },
+    "operationMinimalitySensitive": true,
+    "pendingKeep": {
+      "literal": {
+        "hkdf": true,
+        "oaep": true,
+        "rsa-ser": true
+      },
+      "safe": {
+        "hkdf": false,
+        "oaep": false,
+        "rsa-ser": true
+      }
+    }
+  },
+  "denominatorSensitivity": {
+    "byOperation": {
+      "ec-ser": {
+        "detectedClasses": 10,
+        "failedObservations": 38,
+        "observations": 158,
+        "requiredBearingClasses": 13
+      },
+      "gcm": {
+        "detectedClasses": 11,
+        "failedObservations": 88,
+        "observations": 231,
+        "requiredBearingClasses": 12
+      },
+      "hkdf": {
+        "detectedClasses": 1,
+        "failedObservations": 6,
+        "observations": 60,
+        "requiredBearingClasses": 7
+      },
+      "oaep": {
+        "detectedClasses": 9,
+        "failedObservations": 37,
+        "observations": 98,
+        "requiredBearingClasses": 11
+      },
+      "pss": {
+        "detectedClasses": 11,
+        "failedObservations": 39,
+        "observations": 96,
+        "requiredBearingClasses": 14
+      },
+      "rsa-ser": {
+        "detectedClasses": 15,
+        "failedObservations": 85,
+        "observations": 243,
+        "requiredBearingClasses": 16
+      }
+    },
+    "byRelation": {
+      "R_byte": {
+        "fail": 0,
+        "failShare": 0.0,
+        "observations": 42
+      },
+      "R_cap": {
+        "fail": 0,
+        "failShare": 0.0,
+        "observations": 238
+      },
+      "R_err": {
+        "fail": 65,
+        "failShare": 0.7142857142857143,
+        "observations": 91
+      },
+      "R_interop": {
+        "fail": 114,
+        "failShare": 0.5277777777777778,
+        "observations": 216
+      },
+      "R_ser": {
+        "fail": 66,
+        "failShare": 0.7333333333333333,
+        "observations": 90
+      },
+      "R_val": {
+        "fail": 48,
+        "failShare": 0.22966507177033493,
+        "observations": 209
+      }
+    },
+    "instance": {
+      "divergent": 68,
+      "total": 84
+    },
+    "interpretation": "Observation and instance counts are clustered within designed causal classes; the class is the inferential unit. The 79-class denominator measures coverage, not a detection rate.",
+    "observation": {
+      "fail": 293,
+      "total": 886
+    },
+    "registryCoverage": {
+      "requiredBearing": 73,
+      "total": 79,
+      "zeroRequired": 6
+    },
+    "requiredBearingClass": {
+      "detected": 57,
+      "total": 73
+    }
+  },
+  "inferenceBoundary": "Exact finite-corpus descriptive analysis; no iid, prevalence, p-value, confidence-interval, or random-population claim.",
+  "literal": {
+    "Omin": [
+      "ec-ser",
+      "gcm",
+      "hkdf",
+      "oaep",
+      "pss",
+      "rsa-ser"
+    ],
+    "Rmin": {
+      "adequateSubsets": 4,
+      "minimumCardinality": 4,
+      "minimumFamily": [
+        [
+          "R_interop",
+          "R_ser",
+          "R_val",
+          "R_err"
+        ]
+      ]
+    },
+    "detectionGain": {
+      "ec-ser": {
+        "detected": 10,
+        "exclusive": 2
+      },
+      "gcm": {
+        "detected": 11,
+        "exclusive": 11
+      },
+      "hkdf": {
+        "detected": 1,
+        "exclusive": 1
+      },
+      "oaep": {
+        "detected": 9,
+        "exclusive": 0
+      },
+      "pss": {
+        "detected": 11,
+        "exclusive": 3
+      },
+      "rsa-ser": {
+        "detected": 15,
+        "exclusive": 6
+      }
+    },
+    "diagnosticGain": {
+      "ec-ser": {
+        "exclusive": 50,
+        "qPairs": 50,
+        "reproduced": 0
+      },
+      "gcm": {
+        "exclusive": 47,
+        "qPairs": 52,
+        "reproduced": 5
+      },
+      "hkdf": {
+        "exclusive": 8,
+        "qPairs": 8,
+        "reproduced": 0
+      },
+      "oaep": {
+        "exclusive": 8,
+        "qPairs": 28,
+        "reproduced": 20
+      },
+      "pss": {
+        "exclusive": 16,
+        "qPairs": 36,
+        "reproduced": 20
+      },
+      "rsa-ser": {
+        "exclusive": 15,
+        "qPairs": 15,
+        "reproduced": 0
+      }
+    },
+    "pendingKeep": {
+      "hkdf": true,
+      "oaep": true,
+      "rsa-ser": true
+    }
+  },
+  "partialEvidence": {
+    "nonScoreableCells": 134,
+    "requiredEvidenceIncompleteClasses": 0,
+    "rule": "Undetermined comparisons never count as safe gain; typed non-scoreability is not missing Required evidence.",
+    "safeUndeterminedDetectionCandidates": 45
+  },
+  "runId": "paper4-m4-v7-run-001",
+  "safe": {
+    "Omin": {
+      "fixed": [
+        "ec-ser",
+        "gcm",
+        "pss"
+      ],
+      "pendingKeep": {
+        "hkdf": false,
+        "oaep": false,
+        "rsa-ser": true
+      },
+      "result": [
+        "ec-ser",
+        "gcm",
+        "pss",
+        "rsa-ser"
+      ]
+    },
+    "Rmin": {
+      "adequateSubsets": 2,
+      "core": [
+        "R_byte",
+        "R_err",
+        "R_interop",
+        "R_ser",
+        "R_val"
+      ],
+      "exchangeable": [],
+      "minimumCardinality": 5,
+      "minimumFamily": [
+        [
+          "R_byte",
+          "R_interop",
+          "R_ser",
+          "R_val",
+          "R_err"
+        ]
+      ]
+    },
+    "baselines": {
+      "byteDetected": 0,
+      "conventionalDetected": 21,
+      "conventionalDetectionRecall": 0.3684210526315789,
+      "conventionalDiagnosticPreservation": 0.4,
+      "conventionalIdentifiable": 4,
+      "fullDetected": 57,
+      "fullIdentifiable": 10
+    },
+    "detectionGain": {
+      "ec-ser": {
+        "undetermined-exclusive": 10
+      },
+      "gcm": {
+        "undetermined-exclusive": 11
+      },
+      "hkdf": {
+        "demonstrated-reproduced": 1
+      },
+      "oaep": {
+        "demonstrated-reproduced": 6,
+        "undetermined-exclusive": 3
+      },
+      "pss": {
+        "demonstrated-reproduced": 5,
+        "undetermined-exclusive": 6
+      },
+      "rsa-ser": {
+        "undetermined-exclusive": 15
+      }
+    },
+    "diagnosticGain": {
+      "ec-ser": {
+        "demonstratedExclusive": 29,
+        "qPairs": 29,
+        "reproduced": 0,
+        "undeterminedExclusive": 0
+      },
+      "gcm": {
+        "demonstratedExclusive": 23,
+        "qPairs": 23,
+        "reproduced": 0,
+        "undeterminedExclusive": 0
+      },
+      "hkdf": {
+        "demonstratedExclusive": 0,
+        "qPairs": 0,
+        "reproduced": 0,
+        "undeterminedExclusive": 0
+      },
+      "oaep": {
+        "demonstratedExclusive": 0,
+        "qPairs": 0,
+        "reproduced": 0,
+        "undeterminedExclusive": 0
+      },
+      "pss": {
+        "demonstratedExclusive": 12,
+        "qPairs": 12,
+        "reproduced": 0,
+        "undeterminedExclusive": 0
+      },
+      "rsa-ser": {
+        "demonstratedExclusive": 10,
+        "qPairs": 10,
+        "reproduced": 0,
+        "undeterminedExclusive": 0
+      }
+    },
+    "hypotheses": {
+      "H1": "supported",
+      "H2": "supported",
+      "H3": "supported",
+      "H3details": {
+        "detected": 57,
+        "marginal": true,
+        "operations": [
+          "ec-ser",
+          "gcm",
+          "hkdf",
+          "oaep",
+          "pss",
+          "rsa-ser"
+        ],
+        "ratio": 0.7894736842105263,
+        "svecDetected": 45
+      }
+    },
+    "partitions": {
+      "ec-ser": {
+        "blocks": 7,
+        "classes": 13,
+        "entropyBits": 2.5654483718208256,
+        "identifiableClasses": 4,
+        "residualCollisionClasses": 9,
+        "strata": 4
+      },
+      "gcm": {
+        "blocks": 5,
+        "classes": 12,
+        "entropyBits": 2.054585169337799,
+        "identifiableClasses": 2,
+        "residualCollisionClasses": 10,
+        "strata": 4
+      },
+      "hkdf": {
+        "blocks": 3,
+        "classes": 7,
+        "entropyBits": 1.3787834934861753,
+        "identifiableClasses": 1,
+        "residualCollisionClasses": 6,
+        "strata": 3
+      },
+      "oaep": {
+        "blocks": 3,
+        "classes": 11,
+        "entropyBits": 1.4353713907745331,
+        "identifiableClasses": 0,
+        "residualCollisionClasses": 11,
+        "strata": 3
+      },
+      "pss": {
+        "blocks": 4,
+        "classes": 14,
+        "entropyBits": 1.9591904234199458,
+        "identifiableClasses": 0,
+        "residualCollisionClasses": 14,
+        "strata": 4
+      },
+      "rsa-ser": {
+        "blocks": 6,
+        "classes": 16,
+        "entropyBits": 2.274397470347699,
+        "identifiableClasses": 3,
+        "residualCollisionClasses": 13,
+        "strata": 4
+      }
+    },
+    "population": {
+      "classes": 73,
+      "detectedClasses": 57
+    },
+    "refutation": {
+      "F1": "not-activated",
+      "F2": "not-activated",
+      "F3": "not-activated",
+      "F4": "not-activated",
+      "F5": "not-activated"
+    },
+    "relationContribution": {
+      "R_byte": {
+        "exclusiveDetectionClasses": 0,
+        "positiveDiagnosticClasses": 0,
+        "summedDiagnosticDelta": 0
+      },
+      "R_cap": {
+        "exclusiveDetectionClasses": 0,
+        "positiveDiagnosticClasses": 0,
+        "summedDiagnosticDelta": 0
+      },
+      "R_err": {
+        "exclusiveDetectionClasses": 15,
+        "positiveDiagnosticClasses": 0,
+        "summedDiagnosticDelta": 0
+      },
+      "R_interop": {
+        "exclusiveDetectionClasses": 12,
+        "positiveDiagnosticClasses": 5,
+        "summedDiagnosticDelta": 8
+      },
+      "R_ser": {
+        "exclusiveDetectionClasses": 8,
+        "positiveDiagnosticClasses": 5,
+        "summedDiagnosticDelta": 8
+      },
+      "R_val": {
+        "exclusiveDetectionClasses": 10,
+        "positiveDiagnosticClasses": 5,
+        "summedDiagnosticDelta": 6
+      }
+    },
+    "researchQuestions": {
+      "RQ1": "supported-methodological-synthesis",
+      "RQ2": "resolved-by-minimum-family",
+      "RQ3": "resolved-by-class-relation-causal-matrices",
+      "RQ4": "full-framework-adds-detection-and-diagnosis"
+    },
+    "runId": "paper4-m4-v7-run-001",
+    "safeguards": {
+      "allRegistryClausesMapped": true,
+      "decisionsUseFrozenRules": true,
+      "m3R5M4Changed": false,
+      "taxonomyValuesClosed": true
+    },
+    "schema": "paper4-m5-v0.3-decisions-v1",
+    "traceability": {
+      "registryClasses": "79/79",
+      "requiredBearingBindings": "73/73",
+      "taxonomyClauses": "76/76"
+    }
+  },
+  "schema": "paper4-m5-v0.4-robustness-v1",
+  "structuralMaskEffect": {
+    "operationMasks": {
+      "ec-ser": "111111",
+      "gcm": "111111",
+      "hkdf": "100111",
+      "oaep": "010111",
+      "pss": "010111",
+      "rsa-ser": "111111"
+    },
+    "operationPairs": {
+      "differentMasks": 11,
+      "pairs": [
+        [
+          "hkdf",
+          "gcm"
+        ],
+        [
+          "hkdf",
+          "oaep"
+        ],
+        [
+          "hkdf",
+          "pss"
+        ],
+        [
+          "hkdf",
+          "rsa-ser"
+        ],
+        [
+          "hkdf",
+          "ec-ser"
+        ],
+        [
+          "gcm",
+          "oaep"
+        ],
+        [
+          "gcm",
+          "pss"
+        ],
+        [
+          "oaep",
+          "rsa-ser"
+        ],
+        [
+          "oaep",
+          "ec-ser"
+        ],
+        [
+          "pss",
+          "rsa-ser"
+        ],
+        [
+          "pss",
+          "ec-ser"
+        ]
+      ],
+      "total": 15
+    },
+    "registryClassesByOperation": {
+      "ec-ser": 14,
+      "gcm": 13,
+      "hkdf": 8,
+      "oaep": 12,
+      "pss": 15,
+      "rsa-ser": 17
+    },
+    "registryCrossOperationPairs": {
+      "maskDecided": 1756,
+      "ratio": 0.6814124951493985,
+      "total": 2577
+    },
+    "requiredBearingClassesByOperation": {
+      "ec-ser": 13,
+      "gcm": 12,
+      "hkdf": 7,
+      "oaep": 11,
+      "pss": 14,
+      "rsa-ser": 16
+    },
+    "requiredBearingCrossOperationPairs": {
+      "maskDecided": 1487,
+      "ratio": 0.6768320436959491,
+      "total": 2197
+    }
+  }
+}

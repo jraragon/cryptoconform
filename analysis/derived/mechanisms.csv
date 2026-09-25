@@ -1,0 +1,17 @@
+operation,mechanism,detected,classes
+ec-ser,adapter-transform,false,2
+ec-ser,artifact-transform,false,1
+ec-ser,artifact-transform,true,10
+gcm,adapter-transform,false,1
+gcm,artifact-transform,true,3
+gcm,request-transform,true,8
+hkdf,adapter-transform,false,2
+hkdf,request-transform,false,4
+hkdf,request-transform,true,1
+oaep,adapter-transform,false,2
+oaep,request-transform,true,9
+pss,adapter-transform,false,3
+pss,artifact-transform,true,2
+pss,request-transform,true,9
+rsa-ser,adapter-transform,false,1
+rsa-ser,artifact-transform,true,15

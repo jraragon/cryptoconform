@@ -1,0 +1,985 @@
+{
+  "boundaries": {
+    "descriptiveOnly": true,
+    "gainsComputed": false,
+    "hypothesesEvaluated": false,
+    "minimalSetsComputed": false,
+    "refutationCriteriaEvaluated": false
+  },
+  "classes": [
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "HKDF-NULL-VS-EMPTY-SALT",
+      "nonScoreableCells": 1,
+      "operation": "hkdf",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=n/a;R_ser=n/a;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "HKDF-INFO-TAMPER",
+      "nonScoreableCells": 1,
+      "operation": "hkdf",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=n/a;R_ser=n/a;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "HKDF-IKM-NORMALIZATION",
+      "nonScoreableCells": 1,
+      "operation": "hkdf",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=n/a;R_ser=n/a;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "adapter-transform",
+      "mutationId": "HKDF-HASH-MISMATCH",
+      "nonScoreableCells": 3,
+      "operation": "hkdf",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=n/a;R_ser=n/a;R_val=absent;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "HKDF-LENGTH-WITHIN-DOMAIN-PERTURBATION",
+      "nonScoreableCells": 1,
+      "operation": "hkdf",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=n/a;R_ser=n/a;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 2,
+      "evaluatedInstances": 2,
+      "instances": 2,
+      "mechanism": "request-transform",
+      "mutationId": "HKDF-LENGTH-BOUNDARY-CROSSING",
+      "nonScoreableCells": 1,
+      "operation": "hkdf",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=n/a;R_ser=n/a;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "adapter-transform",
+      "mutationId": "HKDF-UNSUPPORTED-HASH-DECLARATION",
+      "nonScoreableCells": 3,
+      "operation": "hkdf",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=n/a;R_ser=n/a;R_val=absent;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "GCM-PLAINTEXT-NORMALIZATION",
+      "nonScoreableCells": 1,
+      "operation": "gcm",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=fail;R_ser=pass;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "GCM-AAD-ABSENT-EMPTY-DIVERGENCE",
+      "nonScoreableCells": 1,
+      "operation": "gcm",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=fail;R_ser=pass;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "GCM-AAD-IGNORED",
+      "nonScoreableCells": 1,
+      "operation": "gcm",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=fail;R_ser=pass;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "GCM-IV-INTERPRETATION-DIVERGENCE",
+      "nonScoreableCells": 1,
+      "operation": "gcm",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=fail;R_ser=pass;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "GCM-CIPHERTEXT-COMPUTATION-DIVERGENCE",
+      "nonScoreableCells": 1,
+      "operation": "gcm",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=fail;R_ser=pass;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 4,
+      "evaluatedInstances": 4,
+      "instances": 4,
+      "mechanism": "artifact-transform",
+      "mutationId": "GCM-AUTHENTICATION-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "gcm",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=pass;R_ser=fail;R_val=fail;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "GCM-ARTIFACT-C-T-SWAP",
+      "nonScoreableCells": 1,
+      "operation": "gcm",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=pass;R_ser=fail;R_val=fail;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "GCM-ARTIFACT-STRUCTURE-CORRUPTION",
+      "nonScoreableCells": 1,
+      "operation": "gcm",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=pass;R_ser=fail;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "GCM-KEY-PROFILE-BOUNDARY-BYPASS",
+      "nonScoreableCells": 3,
+      "operation": "gcm",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "GCM-IV-PROFILE-BOUNDARY-BYPASS",
+      "nonScoreableCells": 3,
+      "operation": "gcm",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 3,
+      "evaluatedInstances": 3,
+      "instances": 3,
+      "mechanism": "request-transform",
+      "mutationId": "GCM-TAGLENGTH-PROFILE-BOUNDARY-BYPASS",
+      "nonScoreableCells": 3,
+      "operation": "gcm",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "adapter-transform",
+      "mutationId": "GCM-ERROR-MISCLASSIFICATION",
+      "nonScoreableCells": 5,
+      "operation": "gcm",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=absent;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "OAEP-MESSAGE-NORMALIZATION",
+      "nonScoreableCells": 1,
+      "operation": "oaep",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=fail;R_ser=n/a;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "OAEP-CIPHERTEXT-COMPUTATION-DIVERGENCE",
+      "nonScoreableCells": 1,
+      "operation": "oaep",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=fail;R_ser=n/a;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "OAEP-CIPHERTEXT-LENGTH-DIVERGENCE",
+      "nonScoreableCells": 1,
+      "operation": "oaep",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=fail;R_ser=n/a;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "OAEP-MODULUS-PROFILE-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "oaep",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "OAEP-HASH-PROFILE-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "oaep",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "OAEP-MGF-COUPLING-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "oaep",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "OAEP-LABEL-PROFILE-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "oaep",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "OAEP-MESSAGE-BOUNDARY-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "oaep",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 2,
+      "evaluatedInstances": 2,
+      "instances": 2,
+      "mechanism": "request-transform",
+      "mutationId": "OAEP-KEY-ROLE-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "oaep",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "adapter-transform",
+      "mutationId": "OAEP-RANDOMNESS-INTERFACE-LEAK",
+      "nonScoreableCells": 3,
+      "operation": "oaep",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=absent;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "adapter-transform",
+      "mutationId": "OAEP-DECRYPT-ERROR-DISCLOSURE",
+      "nonScoreableCells": 3,
+      "operation": "oaep",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=absent;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "PSS-SIGN-MESSAGE-NORMALIZATION",
+      "nonScoreableCells": 1,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=fail;R_ser=n/a;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "PSS-VERIFY-MESSAGE-NORMALIZATION",
+      "nonScoreableCells": 2,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=fail;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "PSS-SIGNATURE-COMPUTATION-DIVERGENCE",
+      "nonScoreableCells": 1,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=fail;R_ser=n/a;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "PSS-SIGNATURE-LENGTH-DIVERGENCE",
+      "nonScoreableCells": 1,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=fail;R_ser=n/a;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "PSS-MODULUS-PROFILE-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "PSS-HASH-PROFILE-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "PSS-MGF-COUPLING-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "PSS-SALTLENGTH-PROFILE-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "request-transform",
+      "mutationId": "PSS-KEY-ROLE-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=pass;R_err=fail;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "adapter-transform",
+      "mutationId": "PSS-RNG-INTERFACE-LEAK",
+      "nonScoreableCells": 3,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=absent;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "adapter-transform",
+      "mutationId": "PSS-SALT-BYTES-INTERFACE-LEAK",
+      "nonScoreableCells": 3,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=absent;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "PSS-VERIFICATION-FALSE-ACCEPT",
+      "nonScoreableCells": 2,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=fail;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "PSS-VERIFICATION-FALSE-REJECT",
+      "nonScoreableCells": 2,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=fail;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "adapter-transform",
+      "mutationId": "PSS-ERROR-MISCLASSIFICATION",
+      "nonScoreableCells": 3,
+      "operation": "pss",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=n/a;R_interop=absent;R_ser=n/a;R_val=absent;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-PUBLIC-MATERIAL-DIVERGENCE",
+      "nonScoreableCells": 1,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=fail;R_ser=fail;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-PRIVATE-MATERIAL-DIVERGENCE",
+      "nonScoreableCells": 1,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=fail;R_ser=fail;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-DER-IMPORT-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=pass;R_ser=fail;R_val=pass;R_err=pass;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-DER-EXPORT-DIVERGENCE",
+      "nonScoreableCells": 4,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=fail;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-CONTAINER-IMPORT-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=fail;R_ser=fail;R_val=fail;R_err=pass;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-CONTAINER-EXPORT-DIVERGENCE",
+      "nonScoreableCells": 1,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=fail;R_ser=fail;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-TRAILING-DATA-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=pass;R_ser=fail;R_val=pass;R_err=pass;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-ROLE-CONTAINER-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=fail;R_ser=pass;R_val=pass;R_err=pass;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-OID-IMPORT-PROFILE-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=pass;R_ser=fail;R_val=pass;R_err=pass;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-OID-EXPORT-DIVERGENCE",
+      "nonScoreableCells": 1,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=fail;R_ser=fail;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-PARAMETERS-IMPORT-PROFILE-BYPASS",
+      "nonScoreableCells": 1,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=pass;R_ser=fail;R_val=pass;R_err=pass;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-PARAMETERS-EXPORT-CANONICALIZATION-DIVERGENCE",
+      "nonScoreableCells": 1,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=pass;R_interop=fail;R_ser=fail;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-PUBLIC-VALIDITY-BYPASS",
+      "nonScoreableCells": 4,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=fail;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-PRIVATE-DOMAIN-BYPASS",
+      "nonScoreableCells": 4,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=fail;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 5,
+      "evaluatedInstances": 5,
+      "instances": 5,
+      "mechanism": "artifact-transform",
+      "mutationId": "RSA-SER-PRIVATE-RELATIONAL-BYPASS",
+      "nonScoreableCells": 4,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=fail;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "adapter-transform",
+      "mutationId": "RSA-SER-ERROR-MISCLASSIFICATION",
+      "nonScoreableCells": 5,
+      "operation": "rsa-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=absent;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "EC-ROLE-CONTAINER-MISMATCH",
+      "nonScoreableCells": 1,
+      "operation": "ec-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=pass;R_ser=pass;R_val=pass;R_err=pass;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "EC-CURVE-SUBSTITUTION",
+      "nonScoreableCells": 1,
+      "operation": "ec-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=pass;R_ser=fail;R_val=pass;R_err=pass;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "EC-PUBLIC-POINT-ENCODING",
+      "nonScoreableCells": 1,
+      "operation": "ec-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=pass;R_ser=fail;R_val=pass;R_err=pass;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "EC-PUBLIC-OFF-CURVE",
+      "nonScoreableCells": 4,
+      "operation": "ec-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=fail;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "EC-PRIVATE-SCALAR-RANGE",
+      "nonScoreableCells": 4,
+      "operation": "ec-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=fail;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "EC-PRIVATE-PAIR-MISMATCH",
+      "nonScoreableCells": 4,
+      "operation": "ec-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=fail;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "EC-PUBLIC-DER-MALFORMED",
+      "nonScoreableCells": 1,
+      "operation": "ec-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=pass;R_ser=fail;R_val=pass;R_err=pass;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "EC-PRIVATE-DER-MALFORMED",
+      "nonScoreableCells": 1,
+      "operation": "ec-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=pass;R_ser=fail;R_val=pass;R_err=pass;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "EC-PRIVATE-PARAMS-ABSENT",
+      "nonScoreableCells": 2,
+      "operation": "ec-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=fail;R_ser=fail;R_val=pass;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "EC-PRIVATE-PARAMS-MISMATCH",
+      "nonScoreableCells": 1,
+      "operation": "ec-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=fail;R_ser=fail;R_val=pass;R_err=pass;R_cap=pass"
+    },
+    {
+      "detected": true,
+      "divergentInstances": 1,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "artifact-transform",
+      "mutationId": "EC-PRIVATE-PUBKEY-ABSENT",
+      "nonScoreableCells": 1,
+      "operation": "ec-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=fail;R_ser=fail;R_val=fail;R_err=pass;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "adapter-transform",
+      "mutationId": "EC-NATIVE-EXPORT-LEAK",
+      "nonScoreableCells": 5,
+      "operation": "ec-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=absent;R_err=absent;R_cap=pass"
+    },
+    {
+      "detected": false,
+      "divergentInstances": 0,
+      "evaluatedInstances": 1,
+      "instances": 1,
+      "mechanism": "adapter-transform",
+      "mutationId": "EC-ERROR-MAP-SWAP",
+      "nonScoreableCells": 5,
+      "operation": "ec-ser",
+      "requiredEvidenceComplete": true,
+      "spectrum": "R_byte=absent;R_interop=absent;R_ser=absent;R_val=absent;R_err=absent;R_cap=pass"
+    }
+  ],
+  "nonScoreableCells": {
+    "byCause": {
+      "contractually-non-eligible": 18,
+      "structurally-non-comparable": 115,
+      "zero-executable-support": 1
+    },
+    "total": 134
+  },
+  "notes": [
+    "Observation counts are obligation-level and are not independent defect replicates.",
+    "Provider involvement in a relational observation is not provider blame or causal attribution.",
+    "Detected class means at least one divergent stimulus instance; no exclusivity or gain is evaluated."
+  ],
+  "runId": "paper4-m4-v7-run-001",
+  "schema": "paper4-m5-v0.2-descriptive-v1",
+  "totals": {
+    "detectedRequiredBearingClasses": 57,
+    "executions": 1159,
+    "fail": 293,
+    "instanceResults": 84,
+    "observations": 886,
+    "pass": 593,
+    "registryClasses": 79,
+    "requiredBearingClasses": 73,
+    "requiredEvidenceCompleteClasses": 73,
+    "requiredEvidenceIncompleteClasses": 0,
+    "zeroRequiredClasses": 6
+  },
+  "zeroRequiredClasses": [
+    {
+      "gamma0": [
+        "ec-ser.cap"
+      ],
+      "mechanism": "capability-transform",
+      "mutationId": "EC-CAPABILITY-MANIFEST-MISMATCH",
+      "operation": "ec-ser",
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "gamma0": [
+        "gcm.cap.provider"
+      ],
+      "mechanism": "capability-transform",
+      "mutationId": "GCM-PROVIDER-CAPABILITY-MISMATCH",
+      "operation": "gcm",
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "gamma0": [
+        "hkdf.cap",
+        "hkdf.validation",
+        "hkdf.error"
+      ],
+      "mechanism": "capability-transform",
+      "mutationId": "HKDF-CAPABILITY-BOUNDARY-MISMATCH",
+      "operation": "hkdf",
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "gamma0": [
+        "oaep.cap.provider"
+      ],
+      "mechanism": "capability-transform",
+      "mutationId": "OAEP-PROVIDER-CAPABILITY-MISREPORT",
+      "operation": "oaep",
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "gamma0": [
+        "pss.cap.provider"
+      ],
+      "mechanism": "capability-transform",
+      "mutationId": "PSS-PROVIDER-CAPABILITY-MISREPORT",
+      "operation": "pss",
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "gamma0": [
+        "cap"
+      ],
+      "mechanism": "capability-transform",
+      "mutationId": "RSA-SER-PROVIDER-CAPABILITY-MISREPORT",
+      "operation": "rsa-ser",
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    }
+  ]
+}

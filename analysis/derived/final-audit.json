@@ -1,0 +1,480 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "actual": "f50a94d1d6e23ce778df45d33bd476148bf1b97e5d128f3a7e8280037bea4a09",
+        "expected": "f50a94d1d6e23ce778df45d33bd476148bf1b97e5d128f3a7e8280037bea4a09"
+      },
+      "name": "checkpoint-hash:6.Paper_4_M5_Protocol_Gate_v0_1_1-FROZEN.tar.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "members": 16
+      },
+      "name": "checkpoint-integrity:6.Paper_4_M5_Protocol_Gate_v0_1_1-FROZEN.tar.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "actual": "2ff74965c74c21b03bd41d32f09dbf2304daecc34807b5e29f77d0bd865d2c6e",
+        "expected": "2ff74965c74c21b03bd41d32f09dbf2304daecc34807b5e29f77d0bd865d2c6e"
+      },
+      "name": "checkpoint-hash:6.Paper_4_M5_Descriptive_Analysis_v0_2-FROZEN.tar.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "members": 20
+      },
+      "name": "checkpoint-integrity:6.Paper_4_M5_Descriptive_Analysis_v0_2-FROZEN.tar.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "actual": "951cd4e846389af404d218144e542a25731fb24daa28bdf4669dbe8d201d62af",
+        "expected": "951cd4e846389af404d218144e542a25731fb24daa28bdf4669dbe8d201d62af"
+      },
+      "name": "checkpoint-hash:6.Paper_4_M5_Scientific_Decisions_v0_3-FROZEN.tar.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "members": 16
+      },
+      "name": "checkpoint-integrity:6.Paper_4_M5_Scientific_Decisions_v0_3-FROZEN.tar.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "actual": "e42608f3f0efbc5d8ca40c9c66e1328ba3b5231c5e6333cc2976735e5d1ea1ee",
+        "expected": "e42608f3f0efbc5d8ca40c9c66e1328ba3b5231c5e6333cc2976735e5d1ea1ee"
+      },
+      "name": "checkpoint-hash:6.Paper_4_M5_Robustness_v0_4-FROZEN.tar.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "members": 19
+      },
+      "name": "checkpoint-integrity:6.Paper_4_M5_Robustness_v0_4-FROZEN.tar.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "PASS",
+      "name": "validation:v0.1.1",
+      "status": "PASS"
+    },
+    {
+      "detail": "PASS",
+      "name": "validation:v0.2",
+      "status": "PASS"
+    },
+    {
+      "detail": "PASS",
+      "name": "validation:v0.3",
+      "status": "PASS"
+    },
+    {
+      "detail": "PASS",
+      "name": "validation:v0.4",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "detectedRequiredBearingClasses": 57,
+        "executions": 1159,
+        "fail": 293,
+        "instanceResults": 84,
+        "observations": 886,
+        "pass": 593,
+        "registryClasses": 79,
+        "requiredBearingClasses": 73,
+        "zeroRequiredClasses": 6
+      },
+      "name": "population-reconciliation",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "registryClasses": "79/79",
+        "requiredBearingBindings": "73/73",
+        "taxonomyClauses": "76/76"
+      },
+      "name": "traceability",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        "ec-ser",
+        "gcm",
+        "pss",
+        "rsa-ser"
+      ],
+      "name": "normative-Omin",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        [
+          "R_byte",
+          "R_interop",
+          "R_ser",
+          "R_val",
+          "R_err"
+        ]
+      ],
+      "name": "normative-Rmin",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "H1": "supported",
+        "H2": "supported",
+        "H3": "supported",
+        "H3details": {
+          "detected": 57,
+          "marginal": true,
+          "operations": [
+            "ec-ser",
+            "gcm",
+            "hkdf",
+            "oaep",
+            "pss",
+            "rsa-ser"
+          ],
+          "ratio": 0.7894736842105263,
+          "svecDetected": 45
+        }
+      },
+      "name": "hypotheses",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "F1": "not-activated",
+        "F2": "not-activated",
+        "F3": "not-activated",
+        "F4": "not-activated",
+        "F5": "not-activated"
+      },
+      "name": "refutations",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "operationMasks": {
+          "ec-ser": "111111",
+          "gcm": "111111",
+          "hkdf": "100111",
+          "oaep": "010111",
+          "pss": "010111",
+          "rsa-ser": "111111"
+        },
+        "operationPairs": {
+          "differentMasks": 11,
+          "pairs": [
+            [
+              "hkdf",
+              "gcm"
+            ],
+            [
+              "hkdf",
+              "oaep"
+            ],
+            [
+              "hkdf",
+              "pss"
+            ],
+            [
+              "hkdf",
+              "rsa-ser"
+            ],
+            [
+              "hkdf",
+              "ec-ser"
+            ],
+            [
+              "gcm",
+              "oaep"
+            ],
+            [
+              "gcm",
+              "pss"
+            ],
+            [
+              "oaep",
+              "rsa-ser"
+            ],
+            [
+              "oaep",
+              "ec-ser"
+            ],
+            [
+              "pss",
+              "rsa-ser"
+            ],
+            [
+              "pss",
+              "ec-ser"
+            ]
+          ],
+          "total": 15
+        },
+        "registryClassesByOperation": {
+          "ec-ser": 14,
+          "gcm": 13,
+          "hkdf": 8,
+          "oaep": 12,
+          "pss": 15,
+          "rsa-ser": 17
+        },
+        "registryCrossOperationPairs": {
+          "maskDecided": 1756,
+          "ratio": 0.6814124951493985,
+          "total": 2577
+        },
+        "requiredBearingClassesByOperation": {
+          "ec-ser": 13,
+          "gcm": 12,
+          "hkdf": 7,
+          "oaep": 11,
+          "pss": 14,
+          "rsa-ser": 16
+        },
+        "requiredBearingCrossOperationPairs": {
+          "maskDecided": 1487,
+          "ratio": 0.6768320436959491,
+          "total": 2197
+        }
+      },
+      "name": "literal-mask-reproduction",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "Omin": {
+          "literal": [
+            "ec-ser",
+            "gcm",
+            "hkdf",
+            "oaep",
+            "pss",
+            "rsa-ser"
+          ],
+          "safe": [
+            "ec-ser",
+            "gcm",
+            "pss",
+            "rsa-ser"
+          ]
+        },
+        "Rmin": {
+          "literal": {
+            "adequateSubsets": 4,
+            "minimumCardinality": 4,
+            "minimumFamily": [
+              [
+                "R_interop",
+                "R_ser",
+                "R_val",
+                "R_err"
+              ]
+            ]
+          },
+          "safe": {
+            "adequateSubsets": 2,
+            "core": [
+              "R_byte",
+              "R_err",
+              "R_interop",
+              "R_ser",
+              "R_val"
+            ],
+            "exchangeable": [],
+            "minimumCardinality": 5,
+            "minimumFamily": [
+              [
+                "R_byte",
+                "R_interop",
+                "R_ser",
+                "R_val",
+                "R_err"
+              ]
+            ]
+          }
+        },
+        "centralConclusionStable": true,
+        "hypotheses": {
+          "literal": {
+            "H1": "supported",
+            "H2": "supported",
+            "H3": "supported",
+            "H3thresholdSensitivity": {
+              "0.25": true,
+              "0.3333333333333333": true,
+              "0.5": true
+            }
+          },
+          "safe": {
+            "H1": "supported",
+            "H2": "supported",
+            "H3": "supported",
+            "H3details": {
+              "detected": 57,
+              "marginal": true,
+              "operations": [
+                "ec-ser",
+                "gcm",
+                "hkdf",
+                "oaep",
+                "pss",
+                "rsa-ser"
+              ],
+              "ratio": 0.7894736842105263,
+              "svecDetected": 45
+            }
+          }
+        },
+        "operationMinimalitySensitive": true,
+        "pendingKeep": {
+          "literal": {
+            "hkdf": true,
+            "oaep": true,
+            "rsa-ser": true
+          },
+          "safe": {
+            "hkdf": false,
+            "oaep": false,
+            "rsa-ser": true
+          }
+        }
+      },
+      "name": "robust-central-conclusions",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "Omin": {
+          "literal": [
+            "ec-ser",
+            "gcm",
+            "hkdf",
+            "oaep",
+            "pss",
+            "rsa-ser"
+          ],
+          "safe": [
+            "ec-ser",
+            "gcm",
+            "pss",
+            "rsa-ser"
+          ]
+        },
+        "Rmin": {
+          "literal": {
+            "adequateSubsets": 4,
+            "minimumCardinality": 4,
+            "minimumFamily": [
+              [
+                "R_interop",
+                "R_ser",
+                "R_val",
+                "R_err"
+              ]
+            ]
+          },
+          "safe": {
+            "adequateSubsets": 2,
+            "core": [
+              "R_byte",
+              "R_err",
+              "R_interop",
+              "R_ser",
+              "R_val"
+            ],
+            "exchangeable": [],
+            "minimumCardinality": 5,
+            "minimumFamily": [
+              [
+                "R_byte",
+                "R_interop",
+                "R_ser",
+                "R_val",
+                "R_err"
+              ]
+            ]
+          }
+        }
+      },
+      "name": "safe-decisions-unchanged",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "m3_tar": "90921bae4038b55c6f9dbf14ea1fcbef2cfde6c76f0abccd5d31ec0288e14540",
+        "m4_json": "66ec5603ed404092e51b7f4ab1b48fca69a2b8d1e83b76bc1034fcd0866daa41",
+        "m4_tar": "312af9cacb8dd0c02658d340675fbb6e664ca5ebcb99743904fbc8db5c182dc5"
+      },
+      "name": "frozen-input-manifest",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "actual": "90921bae4038b55c6f9dbf14ea1fcbef2cfde6c76f0abccd5d31ec0288e14540",
+        "expected": "90921bae4038b55c6f9dbf14ea1fcbef2cfde6c76f0abccd5d31ec0288e14540"
+      },
+      "name": "input-bytes:m3Tar",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "actual": "312af9cacb8dd0c02658d340675fbb6e664ca5ebcb99743904fbc8db5c182dc5",
+        "expected": "312af9cacb8dd0c02658d340675fbb6e664ca5ebcb99743904fbc8db5c182dc5"
+      },
+      "name": "input-bytes:m4Tar",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "actual": "66ec5603ed404092e51b7f4ab1b48fca69a2b8d1e83b76bc1034fcd0866daa41",
+        "expected": "66ec5603ed404092e51b7f4ab1b48fca69a2b8d1e83b76bc1034fcd0866daa41"
+      },
+      "name": "input-bytes:m4Json",
+      "status": "PASS"
+    }
+  ],
+  "checksPassed": 25,
+  "checksTotal": 25,
+  "frozenScientificResult": {
+    "Omin": [
+      "gcm",
+      "pss",
+      "rsa-ser",
+      "ec-ser"
+    ],
+    "Rmin": [
+      "R_byte",
+      "R_interop",
+      "R_ser",
+      "R_val",
+      "R_err"
+    ],
+    "hypotheses": {
+      "H1": "supported",
+      "H2": "supported",
+      "H3": "supported"
+    },
+    "normativeSemantics": "safe",
+    "population": {
+      "detectedClasses": 57,
+      "instances": 84,
+      "observations": 886,
+      "registryClasses": 79,
+      "requiredBearingClasses": 73
+    },
+    "refutationsActivated": 0
+  },
+  "gate": "PASS",
+  "schema": "paper4-m5-v1.0-final-audit-v1"
+}

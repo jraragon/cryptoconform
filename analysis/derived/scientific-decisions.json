@@ -1,0 +1,241 @@
+{
+  "Omin": {
+    "fixed": [
+      "ec-ser",
+      "gcm",
+      "pss"
+    ],
+    "pendingKeep": {
+      "hkdf": false,
+      "oaep": false,
+      "rsa-ser": true
+    },
+    "result": [
+      "ec-ser",
+      "gcm",
+      "pss",
+      "rsa-ser"
+    ]
+  },
+  "Rmin": {
+    "adequateSubsets": 2,
+    "core": [
+      "R_byte",
+      "R_err",
+      "R_interop",
+      "R_ser",
+      "R_val"
+    ],
+    "exchangeable": [],
+    "minimumCardinality": 5,
+    "minimumFamily": [
+      [
+        "R_byte",
+        "R_interop",
+        "R_ser",
+        "R_val",
+        "R_err"
+      ]
+    ]
+  },
+  "baselines": {
+    "byteDetected": 0,
+    "conventionalDetected": 21,
+    "conventionalDetectionRecall": 0.3684210526315789,
+    "conventionalDiagnosticPreservation": 0.4,
+    "conventionalIdentifiable": 4,
+    "fullDetected": 57,
+    "fullIdentifiable": 10
+  },
+  "detectionGain": {
+    "ec-ser": {
+      "undetermined-exclusive": 10
+    },
+    "gcm": {
+      "undetermined-exclusive": 11
+    },
+    "hkdf": {
+      "demonstrated-reproduced": 1
+    },
+    "oaep": {
+      "demonstrated-reproduced": 6,
+      "undetermined-exclusive": 3
+    },
+    "pss": {
+      "demonstrated-reproduced": 5,
+      "undetermined-exclusive": 6
+    },
+    "rsa-ser": {
+      "undetermined-exclusive": 15
+    }
+  },
+  "diagnosticGain": {
+    "ec-ser": {
+      "demonstratedExclusive": 29,
+      "qPairs": 29,
+      "reproduced": 0,
+      "undeterminedExclusive": 0
+    },
+    "gcm": {
+      "demonstratedExclusive": 23,
+      "qPairs": 23,
+      "reproduced": 0,
+      "undeterminedExclusive": 0
+    },
+    "hkdf": {
+      "demonstratedExclusive": 0,
+      "qPairs": 0,
+      "reproduced": 0,
+      "undeterminedExclusive": 0
+    },
+    "oaep": {
+      "demonstratedExclusive": 0,
+      "qPairs": 0,
+      "reproduced": 0,
+      "undeterminedExclusive": 0
+    },
+    "pss": {
+      "demonstratedExclusive": 12,
+      "qPairs": 12,
+      "reproduced": 0,
+      "undeterminedExclusive": 0
+    },
+    "rsa-ser": {
+      "demonstratedExclusive": 10,
+      "qPairs": 10,
+      "reproduced": 0,
+      "undeterminedExclusive": 0
+    }
+  },
+  "hypotheses": {
+    "H1": "supported",
+    "H2": "supported",
+    "H3": "supported",
+    "H3details": {
+      "detected": 57,
+      "marginal": true,
+      "operations": [
+        "ec-ser",
+        "gcm",
+        "hkdf",
+        "oaep",
+        "pss",
+        "rsa-ser"
+      ],
+      "ratio": 0.7894736842105263,
+      "svecDetected": 45
+    }
+  },
+  "partitions": {
+    "ec-ser": {
+      "blocks": 7,
+      "classes": 13,
+      "entropyBits": 2.5654483718208256,
+      "identifiableClasses": 4,
+      "residualCollisionClasses": 9,
+      "strata": 4
+    },
+    "gcm": {
+      "blocks": 5,
+      "classes": 12,
+      "entropyBits": 2.054585169337799,
+      "identifiableClasses": 2,
+      "residualCollisionClasses": 10,
+      "strata": 4
+    },
+    "hkdf": {
+      "blocks": 3,
+      "classes": 7,
+      "entropyBits": 1.3787834934861753,
+      "identifiableClasses": 1,
+      "residualCollisionClasses": 6,
+      "strata": 3
+    },
+    "oaep": {
+      "blocks": 3,
+      "classes": 11,
+      "entropyBits": 1.4353713907745331,
+      "identifiableClasses": 0,
+      "residualCollisionClasses": 11,
+      "strata": 3
+    },
+    "pss": {
+      "blocks": 4,
+      "classes": 14,
+      "entropyBits": 1.9591904234199458,
+      "identifiableClasses": 0,
+      "residualCollisionClasses": 14,
+      "strata": 4
+    },
+    "rsa-ser": {
+      "blocks": 6,
+      "classes": 16,
+      "entropyBits": 2.274397470347699,
+      "identifiableClasses": 3,
+      "residualCollisionClasses": 13,
+      "strata": 4
+    }
+  },
+  "population": {
+    "classes": 73,
+    "detectedClasses": 57
+  },
+  "refutation": {
+    "F1": "not-activated",
+    "F2": "not-activated",
+    "F3": "not-activated",
+    "F4": "not-activated",
+    "F5": "not-activated"
+  },
+  "relationContribution": {
+    "R_byte": {
+      "exclusiveDetectionClasses": 0,
+      "positiveDiagnosticClasses": 0,
+      "summedDiagnosticDelta": 0
+    },
+    "R_cap": {
+      "exclusiveDetectionClasses": 0,
+      "positiveDiagnosticClasses": 0,
+      "summedDiagnosticDelta": 0
+    },
+    "R_err": {
+      "exclusiveDetectionClasses": 15,
+      "positiveDiagnosticClasses": 0,
+      "summedDiagnosticDelta": 0
+    },
+    "R_interop": {
+      "exclusiveDetectionClasses": 12,
+      "positiveDiagnosticClasses": 5,
+      "summedDiagnosticDelta": 8
+    },
+    "R_ser": {
+      "exclusiveDetectionClasses": 8,
+      "positiveDiagnosticClasses": 5,
+      "summedDiagnosticDelta": 8
+    },
+    "R_val": {
+      "exclusiveDetectionClasses": 10,
+      "positiveDiagnosticClasses": 5,
+      "summedDiagnosticDelta": 6
+    }
+  },
+  "researchQuestions": {
+    "RQ1": "supported-methodological-synthesis",
+    "RQ2": "resolved-by-minimum-family",
+    "RQ3": "resolved-by-class-relation-causal-matrices",
+    "RQ4": "full-framework-adds-detection-and-diagnosis"
+  },
+  "runId": "paper4-m4-v7-run-001",
+  "safeguards": {
+    "allRegistryClausesMapped": true,
+    "decisionsUseFrozenRules": true,
+    "m3R5M4Changed": false,
+    "taxonomyValuesClosed": true
+  },
+  "schema": "paper4-m5-v0.3-decisions-v1",
+  "traceability": {
+    "registryClasses": "79/79",
+    "requiredBearingBindings": "73/73",
+    "taxonomyClauses": "76/76"
+  }
+}

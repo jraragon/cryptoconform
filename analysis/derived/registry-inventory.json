@@ -1,0 +1,958 @@
+{
+  "registryEntries": 79,
+  "entries": [
+    {
+      "mutationId": "HKDF-NULL-VS-EMPTY-SALT",
+      "operation": "hkdf",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "hkdf.salt",
+        "hkdf.output"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "HKDF-INFO-TAMPER",
+      "operation": "hkdf",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "hkdf.info",
+        "hkdf.output"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "HKDF-IKM-NORMALIZATION",
+      "operation": "hkdf",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "hkdf.ikm",
+        "hkdf.output"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "HKDF-HASH-MISMATCH",
+      "operation": "hkdf",
+      "mechanism": "adapter-transform",
+      "gamma0": [
+        "hkdf.hash",
+        "hkdf.output",
+        "hkdf.cap"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "HKDF-LENGTH-WITHIN-DOMAIN-PERTURBATION",
+      "operation": "hkdf",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "hkdf.length",
+        "hkdf.output"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "HKDF-LENGTH-BOUNDARY-CROSSING",
+      "operation": "hkdf",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "hkdf.length",
+        "hkdf.validation",
+        "hkdf.error"
+      ],
+      "stimulusInstanceIds": [
+        "L=0",
+        "L=8161"
+      ]
+    },
+    {
+      "mutationId": "HKDF-UNSUPPORTED-HASH-DECLARATION",
+      "operation": "hkdf",
+      "mechanism": "adapter-transform",
+      "gamma0": [
+        "hkdf.hash",
+        "hkdf.cap",
+        "hkdf.validation",
+        "hkdf.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "HKDF-CAPABILITY-BOUNDARY-MISMATCH",
+      "operation": "hkdf",
+      "mechanism": "capability-transform",
+      "gamma0": [
+        "hkdf.cap",
+        "hkdf.validation",
+        "hkdf.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "GCM-PLAINTEXT-NORMALIZATION",
+      "operation": "gcm",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "gcm.plaintext",
+        "gcm.ciphertext"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "GCM-AAD-ABSENT-EMPTY-DIVERGENCE",
+      "operation": "gcm",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "gcm.aad"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "GCM-AAD-IGNORED",
+      "operation": "gcm",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "gcm.aad",
+        "gcm.authentication"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "GCM-IV-INTERPRETATION-DIVERGENCE",
+      "operation": "gcm",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "gcm.iv",
+        "gcm.ciphertext"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "GCM-CIPHERTEXT-COMPUTATION-DIVERGENCE",
+      "operation": "gcm",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "gcm.ciphertext"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "GCM-AUTHENTICATION-BYPASS",
+      "operation": "gcm",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "gcm.authentication",
+        "gcm.validation"
+      ],
+      "stimulusInstanceIds": [
+        "TAG-TAMPER",
+        "AAD-TAMPER",
+        "IV-TAMPER",
+        "CIPHERTEXT-TAMPER"
+      ]
+    },
+    {
+      "mutationId": "GCM-ARTIFACT-C-T-SWAP",
+      "operation": "gcm",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "gcm.artifact"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "GCM-ARTIFACT-STRUCTURE-CORRUPTION",
+      "operation": "gcm",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "gcm.artifact",
+        "gcm.validation"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "GCM-KEY-PROFILE-BOUNDARY-BYPASS",
+      "operation": "gcm",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "gcm.key",
+        "gcm.validation",
+        "gcm.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "GCM-IV-PROFILE-BOUNDARY-BYPASS",
+      "operation": "gcm",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "gcm.iv",
+        "gcm.validation",
+        "gcm.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "GCM-TAGLENGTH-PROFILE-BOUNDARY-BYPASS",
+      "operation": "gcm",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "gcm.tagLength",
+        "gcm.validation",
+        "gcm.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "tagLength-80",
+        "tagLength-below-floor-16",
+        "tagLength-below-floor-0"
+      ]
+    },
+    {
+      "mutationId": "GCM-PROVIDER-CAPABILITY-MISMATCH",
+      "operation": "gcm",
+      "mechanism": "capability-transform",
+      "gamma0": [
+        "gcm.cap.provider"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "GCM-ERROR-MISCLASSIFICATION",
+      "operation": "gcm",
+      "mechanism": "adapter-transform",
+      "gamma0": [
+        "gcm.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "OAEP-MESSAGE-NORMALIZATION",
+      "operation": "oaep",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "oaep.message",
+        "oaep.ciphertext"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "OAEP-CIPHERTEXT-COMPUTATION-DIVERGENCE",
+      "operation": "oaep",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "oaep.ciphertext"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "OAEP-CIPHERTEXT-LENGTH-DIVERGENCE",
+      "operation": "oaep",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "oaep.ciphertextLength"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "OAEP-MODULUS-PROFILE-BYPASS",
+      "operation": "oaep",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "oaep.modulus",
+        "oaep.validation",
+        "oaep.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "OAEP-HASH-PROFILE-BYPASS",
+      "operation": "oaep",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "oaep.hash",
+        "oaep.validation",
+        "oaep.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "OAEP-MGF-COUPLING-BYPASS",
+      "operation": "oaep",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "oaep.mgfCoupling",
+        "oaep.validation",
+        "oaep.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "OAEP-LABEL-PROFILE-BYPASS",
+      "operation": "oaep",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "oaep.label",
+        "oaep.validation",
+        "oaep.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "OAEP-MESSAGE-BOUNDARY-BYPASS",
+      "operation": "oaep",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "oaep.message",
+        "oaep.validation"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "OAEP-KEY-ROLE-BYPASS",
+      "operation": "oaep",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "oaep.key",
+        "oaep.validation"
+      ],
+      "stimulusInstanceIds": [
+        "encrypt-with-private",
+        "decrypt-with-public"
+      ]
+    },
+    {
+      "mutationId": "OAEP-RANDOMNESS-INTERFACE-LEAK",
+      "operation": "oaep",
+      "mechanism": "adapter-transform",
+      "gamma0": [
+        "oaep.randomness",
+        "oaep.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "OAEP-DECRYPT-ERROR-DISCLOSURE",
+      "operation": "oaep",
+      "mechanism": "adapter-transform",
+      "gamma0": [
+        "oaep.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "OAEP-PROVIDER-CAPABILITY-MISREPORT",
+      "operation": "oaep",
+      "mechanism": "capability-transform",
+      "gamma0": [
+        "oaep.cap.provider"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-SIGN-MESSAGE-NORMALIZATION",
+      "operation": "pss",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "pss.message",
+        "pss.signature"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-VERIFY-MESSAGE-NORMALIZATION",
+      "operation": "pss",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "pss.message",
+        "pss.verification"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-SIGNATURE-COMPUTATION-DIVERGENCE",
+      "operation": "pss",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "pss.signature"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-SIGNATURE-LENGTH-DIVERGENCE",
+      "operation": "pss",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "pss.signatureLength"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-MODULUS-PROFILE-BYPASS",
+      "operation": "pss",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "pss.modulus",
+        "pss.validation",
+        "pss.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-HASH-PROFILE-BYPASS",
+      "operation": "pss",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "pss.hash",
+        "pss.validation",
+        "pss.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-MGF-COUPLING-BYPASS",
+      "operation": "pss",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "pss.mgfCoupling",
+        "pss.validation",
+        "pss.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-SALTLENGTH-PROFILE-BYPASS",
+      "operation": "pss",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "pss.saltLength",
+        "pss.validation",
+        "pss.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-KEY-ROLE-BYPASS",
+      "operation": "pss",
+      "mechanism": "request-transform",
+      "gamma0": [
+        "pss.key",
+        "pss.validation"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-RNG-INTERFACE-LEAK",
+      "operation": "pss",
+      "mechanism": "adapter-transform",
+      "gamma0": [
+        "pss.rngControl",
+        "pss.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-SALT-BYTES-INTERFACE-LEAK",
+      "operation": "pss",
+      "mechanism": "adapter-transform",
+      "gamma0": [
+        "pss.saltBytes",
+        "pss.cap.portable"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-VERIFICATION-FALSE-ACCEPT",
+      "operation": "pss",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "pss.verification"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-VERIFICATION-FALSE-REJECT",
+      "operation": "pss",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "pss.verification"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-ERROR-MISCLASSIFICATION",
+      "operation": "pss",
+      "mechanism": "adapter-transform",
+      "gamma0": [
+        "pss.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "PSS-PROVIDER-CAPABILITY-MISREPORT",
+      "operation": "pss",
+      "mechanism": "capability-transform",
+      "gamma0": [
+        "pss.cap.provider"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-PUBLIC-MATERIAL-DIVERGENCE",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "public-material"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-PRIVATE-MATERIAL-DIVERGENCE",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "private-material"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-DER-IMPORT-BYPASS",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "der-syntax"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-DER-EXPORT-DIVERGENCE",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "der-syntax"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-CONTAINER-IMPORT-BYPASS",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "container"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-CONTAINER-EXPORT-DIVERGENCE",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "container"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-TRAILING-DATA-BYPASS",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "exact-consumption"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-ROLE-CONTAINER-BYPASS",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "role-container"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-OID-IMPORT-PROFILE-BYPASS",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "algorithm-id"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-OID-EXPORT-DIVERGENCE",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "algorithm-id"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-PARAMETERS-IMPORT-PROFILE-BYPASS",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "algorithm-params"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-PARAMETERS-EXPORT-CANONICALIZATION-DIVERGENCE",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "algorithm-params"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-PUBLIC-VALIDITY-BYPASS",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "public-validity"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-PRIVATE-DOMAIN-BYPASS",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "private-domain"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-PRIVATE-RELATIONAL-BYPASS",
+      "operation": "rsa-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "private-relations"
+      ],
+      "stimulusInstanceIds": [
+        "n-neq-pq",
+        "ed-not-1",
+        "edP-not-1",
+        "edQ-not-1",
+        "qqInv-not-1"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-ERROR-MISCLASSIFICATION",
+      "operation": "rsa-ser",
+      "mechanism": "adapter-transform",
+      "gamma0": [
+        "error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "RSA-SER-PROVIDER-CAPABILITY-MISREPORT",
+      "operation": "rsa-ser",
+      "mechanism": "capability-transform",
+      "gamma0": [
+        "cap"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-ROLE-CONTAINER-MISMATCH",
+      "operation": "ec-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "ec-ser.key.role",
+        "ec-ser.validation.semantic",
+        "ec-ser.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-CURVE-SUBSTITUTION",
+      "operation": "ec-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "ec-ser.curve",
+        "ec-ser.public.asn1-or-private.asn1",
+        "ec-ser.validation.semantic",
+        "ec-ser.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-PUBLIC-POINT-ENCODING",
+      "operation": "ec-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "ec-ser.public.point",
+        "ec-ser.validation.semantic",
+        "ec-ser.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-PUBLIC-OFF-CURVE",
+      "operation": "ec-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "ec-ser.curveMembership",
+        "ec-ser.validation.semantic",
+        "ec-ser.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-PRIVATE-SCALAR-RANGE",
+      "operation": "ec-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "ec-ser.private.scalar",
+        "ec-ser.validation.semantic",
+        "ec-ser.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-PRIVATE-PAIR-MISMATCH",
+      "operation": "ec-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "ec-ser.pairConsistency",
+        "ec-ser.validation.semantic",
+        "ec-ser.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-PUBLIC-DER-MALFORMED",
+      "operation": "ec-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "ec-ser.public.asn1",
+        "ec-ser.validation.syntax",
+        "ec-ser.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-PRIVATE-DER-MALFORMED",
+      "operation": "ec-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "ec-ser.private.asn1",
+        "ec-ser.validation.syntax",
+        "ec-ser.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-PRIVATE-PARAMS-ABSENT",
+      "operation": "ec-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "ec-ser.validation.semantic",
+        "ec-ser.export"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-PRIVATE-PARAMS-MISMATCH",
+      "operation": "ec-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "ec-ser.curve",
+        "ec-ser.private.asn1",
+        "ec-ser.validation.semantic",
+        "ec-ser.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-PRIVATE-PUBKEY-ABSENT",
+      "operation": "ec-ser",
+      "mechanism": "artifact-transform",
+      "gamma0": [
+        "ec-ser.private.asn1",
+        "ec-ser.validation.semantic",
+        "ec-ser.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-NATIVE-EXPORT-LEAK",
+      "operation": "ec-ser",
+      "mechanism": "adapter-transform",
+      "gamma0": [
+        "ec-ser.export",
+        "ec-ser.public.asn1-or-private.asn1"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-ERROR-MAP-SWAP",
+      "operation": "ec-ser",
+      "mechanism": "adapter-transform",
+      "gamma0": [
+        "ec-ser.error"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    },
+    {
+      "mutationId": "EC-CAPABILITY-MANIFEST-MISMATCH",
+      "operation": "ec-ser",
+      "mechanism": "capability-transform",
+      "gamma0": [
+        "ec-ser.cap"
+      ],
+      "stimulusInstanceIds": [
+        "default"
+      ]
+    }
+  ]
+}
