@@ -298,7 +298,7 @@ different software versions or execution environments.
 
 
 
-License information will be added before the archival release.
+This replication package is distributed under the MIT License. See `LICENSE`.
 
 
 
