@@ -1,0 +1,25 @@
+{
+  "name": "paper4-experimental-evidence-base",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reference SDK, provider adapters, and mutation harness for Paper 4 (frozen design: v0.6, D-001-D-070).",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:native": "bash harness/orchestration/native-cli/build.sh",
+    "slice:hkdf-webcrypto": "tsx scripts/run-hkdf-webcrypto.ts",
+    "test": "node harness/scripts/run-tests.mjs",
+    "audit:m2.4.2": "tsx harness/audits/run-all.ts",
+    "status:m2.4.6": "tsx harness/scripts/m2.4.6-status.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.19",
+    "playwright": "^1.62.1",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  },
+  "_note_at_repo_init": "The M1 slice was verified in a sandboxed, network-restricted environment using globally-available tsx (execution) rather than a full `npm install`. At real repo init, run `npm install` to pull @types/node (needed for `tsc` type-checking, not for tsx execution) and pin exact tsx/typescript versions actually used."
+}

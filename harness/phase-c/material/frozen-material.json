@@ -1,0 +1,271 @@
+{
+  "schemaVersion": "1.0",
+  "records": [
+    {
+      "materialId": "rsa-3072-primary-01",
+      "materialType": "rsa-3072-keypair",
+      "schemaVersion": "1.0",
+      "value": {
+        "d": {
+          "__bytes__": "08aa8a10da309ca9ab8daea483758bf4bd0f115cb1b0e2d1fb39a86aae23922f1cfefbe3dadc2c7cba4558460ebe7d0f08522e592358a99fce8456308644758fd78c400f35de9a43006000ef66e733bc5aa0db5df5676ba40095183f1f0499b386e42f3c01c9f904bdf1e269dc29b67ed6da0cef95ad4691dd8353260dbd95ce21ae65fc328df7794e99ba3557b9f3b4d9ab3bdaf9c4d14c4261d9448111584675178f3c87a024c69eca00f3774dc4ee9d4efe46fce80013ea2f09856c7a7806c87162155c027134d2696b0757b309d95784a930ed2d5a5300324861eb4d35576447305b303db0f0471874aa107732921ff92d9b20b4af3917356617eb492121243bd2f847262a4ebf8da231a55bc8d04338c81dd2c66cd9d19e0e8302fe63f3131b082f8ef6de354a6960ed875a5b6bd76302d406fc70f4500920b9afac41907a3d9e1c3c08cc9525887bb0610ad43c76db999235a57f20aad56f353dee96b630c7aa2e98213349164d9aa2ebfae67c2e709e4198638b62a4b40f7b940ecb6d"
+        },
+        "dp": {
+          "__bytes__": "947f90c76dc4d00795edc8a942574dd1d3841d8e9e9171dac2c0068c81f4741c0ac7ab5f6329578ef47da92a7d36fe14b8a95cdeaafa50d42d73c57ead67a883cb0f4396f43b47679a5e804bcae4d4d4f7582f6989c02ee857501e90408bf106fce8a46e81b1132a1b8eb5330d199813bcedcebe65781a9bcd43d86b292ee07d31ef28c41c804fd6a706977cd9a5a482a1fd26538ef5c2696be506082874c8141031ef0e140ae42242dd6cb45bb307d4f9c3dc02b4daf82bdf48b85a9d9d846b"
+        },
+        "dq": {
+          "__bytes__": "c5bd115b563fd7cb91a62103fb843793fd0ec061744e5dfb0e66d600ae9e3e54341554d0d51cef262bf20f8581bd352724247d3aacaf1df414a60481bd459c30152c8731919b2e3eb3eb86b8cf2c5f8d083f289dec0af18d94b5a2ccf53af0d3ff024a90235ed01f96e4fd986c663a99ee62dc0ac670ca23ec395c8308a04914e5da833e1af5057d2d5d1d60f50b7ec8b19d91e63128859f1c7813cc5543a435d34000027276bab04f7b2e36dfa7083a397657ea8f4b41e096c7726213886ad9"
+        },
+        "e": {
+          "__bytes__": "010001"
+        },
+        "modulusBits": 3072,
+        "n": {
+          "__bytes__": "cdfcd5cfe75ab18a805038965646f93c6a4884ccb2d5b47ea5bb62fc2e7b04b39ff466836a0be656fbc83dbadb24e140b3ffd3676ec087293ff2644ba75014dc03dfd6a88b565f59cbaf7ada5e8c85114616e62452f6e0279fc704b1225d90488265d4b9ce41eb990bd8725d1834bf5dd4262ebc533855a4abf1dd427f65058c79e197596ea01ce69ad68b01ba7e542f722343521f383546a3b2f8daa0621a7e5f9777cf71f4c4df620ca52f3a557bb64052c7ee6f6a498064c055a1792f4d3fddd08264c1fe50ee930f75531b3f50e1f0dc46d79c3460ce86ec7e4e9206354bae51d6f49068cbb5d3bc7301a9b2c9d1c73dce9a34458d17005caad1ba2348f5c62e5c40907cbb393fb122c2889b9fb1ba4a4d4eae113d8832559a4eb5b6b900c85e796f51b66d3a6e180b700736bfca246b75b4c89321dcbd538a20b61fc1ce12d62f7b95170027f88ed33325f51cb24524719fe9756f4cd7efcf7538aa30a012099c42c72f68bde7c1f04125288b29d751ad3ed1568810b0413a48cb9607e3"
+        },
+        "p": {
+          "__bytes__": "f310fbce3f497b75b3dbe791d781678a9e7675308c756af66eb1a3d16e57e6e371da1946612d57c19f6b71ee753b977f9aea43bc5a5cecfe96b9efd058bc1deb586d1836ef20daf0e3dc9877b631c12928659382413d7e39021b43216a1e5ad93bf3b4fb9efdb90ff502081b12b7fb540a29c657a262bba80bea6ce7b1db0abc4fd8fd5e145f8cf4ecd542ce0d81bca65b2fbe8848f2d184baeb0f58a08a6a6913afb70f5bc35cd6a52622d4f40f16172b1e5644aff797a575f65e616a4c1607"
+        },
+        "q": {
+          "__bytes__": "d8f2c5432bfe3e39b0f662c49828be86439af33cf8889a417c93463d7125437e1a6c659d2581d4c32a55b6070d10d681f6cf58af1a77a66450197a9ca3e18f95ed512e40570092da2652cb12ce181d405c7c49bc38818509b4311830db52a52178694c079175a81183fe10a26b0cd819e3c095218cde34aa52908870af01adc12ae5a175fa07d60b4f2a8459aaa1a7943568bb253d07ec5a59ce942ed69be273cbe08178ce6fe0c30efd345637ed737ca8fead66e53d50d5e8b40989b0852845"
+        },
+        "qi": {
+          "__bytes__": "493fea8747511b18467724cf25f566e575afa19c9b10d55418f395580d84e0f15ba7e9cbf9babb8273002bbf8bdc486130c97b994c29e4974d3074d9513b2790f79c1e43f9d0f7adabafeb52cbce84fe38044f5b5cb2dfe71ae26a7f919a89d71c0a629fe18edd622a653af70ad869a820f6e7ea10d6f8efe77f0d6b73457fbaca1b0346a77c7bb52c2629ea9515293f30bd7e6670bac781c308caad4ec8a10f64709cbe65b418e5b310e86a42b5755fbb752c96bf88041152ef81d0b69ef89b"
+        }
+      },
+      "canonicalEncoding": "o:9:s:1:du:384:08aa8a10da309ca9ab8daea483758bf4bd0f115cb1b0e2d1fb39a86aae23922f1cfefbe3dadc2c7cba4558460ebe7d0f08522e592358a99fce8456308644758fd78c400f35de9a43006000ef66e733bc5aa0db5df5676ba40095183f1f0499b386e42f3c01c9f904bdf1e269dc29b67ed6da0cef95ad4691dd8353260dbd95ce21ae65fc328df7794e99ba3557b9f3b4d9ab3bdaf9c4d14c4261d9448111584675178f3c87a024c69eca00f3774dc4ee9d4efe46fce80013ea2f09856c7a7806c87162155c027134d2696b0757b309d95784a930ed2d5a5300324861eb4d35576447305b303db0f0471874aa107732921ff92d9b20b4af3917356617eb492121243bd2f847262a4ebf8da231a55bc8d04338c81dd2c66cd9d19e0e8302fe63f3131b082f8ef6de354a6960ed875a5b6bd76302d406fc70f4500920b9afac41907a3d9e1c3c08cc9525887bb0610ad43c76db999235a57f20aad56f353dee96b630c7aa2e98213349164d9aa2ebfae67c2e709e4198638b62a4b40f7b940ecb6ds:2:dpu:192:947f90c76dc4d00795edc8a942574dd1d3841d8e9e9171dac2c0068c81f4741c0ac7ab5f6329578ef47da92a7d36fe14b8a95cdeaafa50d42d73c57ead67a883cb0f4396f43b47679a5e804bcae4d4d4f7582f6989c02ee857501e90408bf106fce8a46e81b1132a1b8eb5330d199813bcedcebe65781a9bcd43d86b292ee07d31ef28c41c804fd6a706977cd9a5a482a1fd26538ef5c2696be506082874c8141031ef0e140ae42242dd6cb45bb307d4f9c3dc02b4daf82bdf48b85a9d9d846bs:2:dqu:192:c5bd115b563fd7cb91a62103fb843793fd0ec061744e5dfb0e66d600ae9e3e54341554d0d51cef262bf20f8581bd352724247d3aacaf1df414a60481bd459c30152c8731919b2e3eb3eb86b8cf2c5f8d083f289dec0af18d94b5a2ccf53af0d3ff024a90235ed01f96e4fd986c663a99ee62dc0ac670ca23ec395c8308a04914e5da833e1af5057d2d5d1d60f50b7ec8b19d91e63128859f1c7813cc5543a435d34000027276bab04f7b2e36dfa7083a397657ea8f4b41e096c7726213886ad9s:1:eu:3:010001s:11:modulusBitsn:4:3072s:1:nu:384:cdfcd5cfe75ab18a805038965646f93c6a4884ccb2d5b47ea5bb62fc2e7b04b39ff466836a0be656fbc83dbadb24e140b3ffd3676ec087293ff2644ba75014dc03dfd6a88b565f59cbaf7ada5e8c85114616e62452f6e0279fc704b1225d90488265d4b9ce41eb990bd8725d1834bf5dd4262ebc533855a4abf1dd427f65058c79e197596ea01ce69ad68b01ba7e542f722343521f383546a3b2f8daa0621a7e5f9777cf71f4c4df620ca52f3a557bb64052c7ee6f6a498064c055a1792f4d3fddd08264c1fe50ee930f75531b3f50e1f0dc46d79c3460ce86ec7e4e9206354bae51d6f49068cbb5d3bc7301a9b2c9d1c73dce9a34458d17005caad1ba2348f5c62e5c40907cbb393fb122c2889b9fb1ba4a4d4eae113d8832559a4eb5b6b900c85e796f51b66d3a6e180b700736bfca246b75b4c89321dcbd538a20b61fc1ce12d62f7b95170027f88ed33325f51cb24524719fe9756f4cd7efcf7538aa30a012099c42c72f68bde7c1f04125288b29d751ad3ed1568810b0413a48cb9607e3s:1:pu:192:f310fbce3f497b75b3dbe791d781678a9e7675308c756af66eb1a3d16e57e6e371da1946612d57c19f6b71ee753b977f9aea43bc5a5cecfe96b9efd058bc1deb586d1836ef20daf0e3dc9877b631c12928659382413d7e39021b43216a1e5ad93bf3b4fb9efdb90ff502081b12b7fb540a29c657a262bba80bea6ce7b1db0abc4fd8fd5e145f8cf4ecd542ce0d81bca65b2fbe8848f2d184baeb0f58a08a6a6913afb70f5bc35cd6a52622d4f40f16172b1e5644aff797a575f65e616a4c1607s:1:qu:192:d8f2c5432bfe3e39b0f662c49828be86439af33cf8889a417c93463d7125437e1a6c659d2581d4c32a55b6070d10d681f6cf58af1a77a66450197a9ca3e18f95ed512e40570092da2652cb12ce181d405c7c49bc38818509b4311830db52a52178694c079175a81183fe10a26b0cd819e3c095218cde34aa52908870af01adc12ae5a175fa07d60b4f2a8459aaa1a7943568bb253d07ec5a59ce942ed69be273cbe08178ce6fe0c30efd345637ed737ca8fead66e53d50d5e8b40989b0852845s:2:qiu:192:493fea8747511b18467724cf25f566e575afa19c9b10d55418f395580d84e0f15ba7e9cbf9babb8273002bbf8bdc486130c97b994c29e4974d3074d9513b2790f79c1e43f9d0f7adabafeb52cbce84fe38044f5b5cb2dfe71ae26a7f919a89d71c0a629fe18edd622a653af70ad869a820f6e7ea10d6f8efe77f0d6b73457fbaca1b0346a77c7bb52c2629ea9515293f30bd7e6670bac781c308caad4ec8a10f64709cbe65b418e5b310e86a42b5755fbb752c96bf88041152ef81d0b69ef89b",
+      "sha256": "3e9417686a3de0c05d4cc664658f66a35944317b7a9f95e7a240699ee03c4e55",
+      "provenance": {
+        "origin": "generated-during-m3",
+        "generator": "scripts/generate-frozen-material.ts",
+        "generatorVersion": "M3.2.4a-6",
+        "createdAt": "2026-09-06T13:11:45.112Z"
+      }
+    },
+    {
+      "materialId": "ec-p256-primary-01",
+      "materialType": "ec-p256-keypair",
+      "schemaVersion": "1.0",
+      "value": {
+        "curve": "P-256",
+        "d": {
+          "__bytes__": "f4a32cdd190f9e8a1c1b315ae54400ea6b1d4340ee3edc45adda19fb1edd5cc2"
+        },
+        "x": {
+          "__bytes__": "222b6f47c596e51ce9c7e240f58ec8590518ff73c64342eb7b9687349359033d"
+        },
+        "y": {
+          "__bytes__": "acd9020431ce7f70507f9c8a9343b8ac873605eeda882d054da8b6db3b71e4e2"
+        }
+      },
+      "canonicalEncoding": "o:4:s:5:curves:5:P-256s:1:du:32:f4a32cdd190f9e8a1c1b315ae54400ea6b1d4340ee3edc45adda19fb1edd5cc2s:1:xu:32:222b6f47c596e51ce9c7e240f58ec8590518ff73c64342eb7b9687349359033ds:1:yu:32:acd9020431ce7f70507f9c8a9343b8ac873605eeda882d054da8b6db3b71e4e2",
+      "sha256": "e3fd368a28347c934edc316fe2061626d0d07ccdcb39631c86dd1ef9d2bbad97",
+      "provenance": {
+        "origin": "generated-during-m3",
+        "generator": "scripts/generate-frozen-material.ts",
+        "generatorVersion": "M3.2.4a-6",
+        "createdAt": "2026-09-06T13:11:45.112Z"
+      }
+    },
+    {
+      "materialId": "aes-phasec-primary-01",
+      "materialType": "aes-base-material",
+      "schemaVersion": "1.0",
+      "value": {
+        "aad": {
+          "__bytes__": "70686173652d632d616164"
+        },
+        "iv": {
+          "__bytes__": "00ca0e84434722e8fe1e9efd"
+        },
+        "key": {
+          "__bytes__": "3197f557f4d1f8554249ec1d8b2884dcae29ea928aa30cf8ab4eb49c35fe1255"
+        },
+        "plaintext": {
+          "__bytes__": "5061706572203420506861736520432063616e6f6e6963616c20706c61696e74657874"
+        }
+      },
+      "canonicalEncoding": "o:4:s:3:aadu:11:70686173652d632d616164s:2:ivu:12:00ca0e84434722e8fe1e9efds:3:keyu:32:3197f557f4d1f8554249ec1d8b2884dcae29ea928aa30cf8ab4eb49c35fe1255s:9:plaintextu:35:5061706572203420506861736520432063616e6f6e6963616c20706c61696e74657874",
+      "sha256": "872700e84176adcf046a64af14ed5dd76805dcf3b87d455fe34450c2d358c524",
+      "provenance": {
+        "origin": "generated-during-m3",
+        "generator": "scripts/generate-frozen-material.ts",
+        "generatorVersion": "M3.2.4a-6",
+        "createdAt": "2026-09-06T13:11:45.112Z"
+      }
+    },
+    {
+      "materialId": "hkdf-phasec-primary-01",
+      "materialType": "hkdf-base-material",
+      "schemaVersion": "1.0",
+      "value": {
+        "ikm": {
+          "__bytes__": "0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b"
+        },
+        "info": {
+          "__bytes__": "f0f1f2f3f4f5f6f7f8f9"
+        },
+        "salt": {
+          "__bytes__": "000102030405060708090a0b0c"
+        }
+      },
+      "canonicalEncoding": "o:3:s:3:ikmu:22:0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0bs:4:infou:10:f0f1f2f3f4f5f6f7f8f9s:4:saltu:13:000102030405060708090a0b0c",
+      "sha256": "be1af7b755022d0dd16eea4c8a1376b62ad73fa66174331ba915d8449c9f0c2c",
+      "provenance": {
+        "origin": "generated-during-m3",
+        "generator": "scripts/generate-frozen-material.ts",
+        "generatorVersion": "M3.2.4a-6",
+        "createdAt": "2026-09-06T13:11:45.112Z"
+      }
+    },
+    {
+      "materialId": "gcm-valid-artifact-01",
+      "materialType": "gcm-valid-artifact",
+      "schemaVersion": "1.0",
+      "value": {
+        "ciphertext": {
+          "__bytes__": "8cb930a6f514bc6f674fac1182daea5735a2969fb6b970dcb6d66359e6081b8efe668b8a12212f4a16fa3359a55c550c00deea"
+        },
+        "sourceMaterialId": "aes-phasec-primary-01"
+      },
+      "canonicalEncoding": "o:2:s:10:ciphertextu:51:8cb930a6f514bc6f674fac1182daea5735a2969fb6b970dcb6d66359e6081b8efe668b8a12212f4a16fa3359a55c550c00deeas:16:sourceMaterialIds:21:aes-phasec-primary-01",
+      "sha256": "0e0da716e1bd6aad33dd49a859427ef644f1db90cb5099c8cad42093d4ee022f",
+      "provenance": {
+        "origin": "generated-during-m3",
+        "generator": "scripts/generate-frozen-material.ts",
+        "generatorVersion": "M3.2.4a-6",
+        "sourceMaterialIds": [
+          "aes-phasec-primary-01"
+        ],
+        "createdAt": "2026-09-06T13:11:45.112Z"
+      },
+      "qualification": "webcrypto-output",
+      "supersededBy": [
+        "gcm-sdk-artifact-general-01",
+        "gcm-sdk-artifact-ctlen-01"
+      ]
+    },
+    {
+      "materialId": "pss-valid-signature-01",
+      "materialType": "pss-valid-signature",
+      "schemaVersion": "1.0",
+      "value": {
+        "message": {
+          "__bytes__": "5061706572203420506861736520432063616e6f6e6963616c206d657373616765"
+        },
+        "signature": {
+          "__bytes__": "c2f54e74434ea7925b81476fb3868a116160560be1961b8f2699f3bcc2e5bc40c084c97de2c914e212e0990c57deb1586b2debe5a46d2d7c07ce3ab92c98440a89eac0d61a65c3d4cb7c91c97d9c46aecf26cfcedcb35894e46ed86de660793d14b62975a883e1f3aacf7084b56ae7f3c7be3259e28af1877c3fddb45d35756e240cb7f99862433c63edcc93ecf96ca2e18ad17bbb2dd89a06763d1a446353e1d53a095fade7894131ef6dd331c3428de292968ac8be00d05d409299ec271dd57bc8adeeb68b3ac1b8e52edab7a6549474bfe62a0a329026fd45e97ae525d9c4647451d745879b3a112dd1b90ea0e1ba5284f1bc9ae9767db48a0414ddc18a3a4d5e4a77a2763035157c99c2894e847cb5c87dd5f595de6c2d4f45e6e6cf7674bb80eb4dd2389052887917c8310abbe7e8749f1a2c34fa66ed676e033fcb04cdc08aa1782ebce1d55c17f652be26cc84d07ad1b856b4f34dfea75b01de894e4973f45a0b1c4a4d15e0c44e54972e9065ab6e879cbd808e3c9f162cdd861372de"
+        },
+        "sourceMaterialId": "rsa-3072-primary-01"
+      },
+      "canonicalEncoding": "o:3:s:7:messageu:33:5061706572203420506861736520432063616e6f6e6963616c206d657373616765s:9:signatureu:384:c2f54e74434ea7925b81476fb3868a116160560be1961b8f2699f3bcc2e5bc40c084c97de2c914e212e0990c57deb1586b2debe5a46d2d7c07ce3ab92c98440a89eac0d61a65c3d4cb7c91c97d9c46aecf26cfcedcb35894e46ed86de660793d14b62975a883e1f3aacf7084b56ae7f3c7be3259e28af1877c3fddb45d35756e240cb7f99862433c63edcc93ecf96ca2e18ad17bbb2dd89a06763d1a446353e1d53a095fade7894131ef6dd331c3428de292968ac8be00d05d409299ec271dd57bc8adeeb68b3ac1b8e52edab7a6549474bfe62a0a329026fd45e97ae525d9c4647451d745879b3a112dd1b90ea0e1ba5284f1bc9ae9767db48a0414ddc18a3a4d5e4a77a2763035157c99c2894e847cb5c87dd5f595de6c2d4f45e6e6cf7674bb80eb4dd2389052887917c8310abbe7e8749f1a2c34fa66ed676e033fcb04cdc08aa1782ebce1d55c17f652be26cc84d07ad1b856b4f34dfea75b01de894e4973f45a0b1c4a4d15e0c44e54972e9065ab6e879cbd808e3c9f162cdd861372des:16:sourceMaterialIds:19:rsa-3072-primary-01",
+      "sha256": "1bee1e121b2b8d2a1fbcfd07ef49319bb92ce9e872dfdeaa82984db51074627b",
+      "provenance": {
+        "origin": "generated-during-m3",
+        "generator": "scripts/generate-frozen-material.ts",
+        "generatorVersion": "M3.2.4a-6",
+        "sourceMaterialIds": [
+          "rsa-3072-primary-01"
+        ],
+        "createdAt": "2026-09-06T13:11:45.112Z"
+      }
+    },
+    {
+      "materialId": "pss-valid-signature-02",
+      "materialType": "pss-valid-signature",
+      "schemaVersion": "1.0",
+      "value": {
+        "message": {
+          "__bytes__": "5061706572203420506861736520432063616e6f6e6963616c206d657373616765"
+        },
+        "signature": {
+          "__bytes__": "4f4865eaaa49c30236b548299e55b61fc3519a801659a34d7ad3a7a25849263ce9344945f2fa4e33a4dad9047657645cf6171aa4cd03ce1929b05fb75039f4ee14f0b234b73425b347ebb7e199a3628557b93ba32b5ff6342483442cb31cd09fae5179cbc15ec9cb359ad0a97360214b260b35bb910523ee8c0766c83a37866be0396894ca590e7c606f4ef6aa02328c427b9e1eb39cfec088df9fdbe158f0fc3e223e63ee0603bd95fc710d45b5bafcc4bdda37c37ffaf2dc65a1727522dfd3c8bf104fbaca52d796d8f58c854ce458c5790531921ae5a716a170920df1fb419c5c24cb0b25ba5769240a2ef40f2dca9876000a8edce81cf5f1a6923f9f549987fc80e101d384e6b6a9df28074b8288ee5cc6f107af7919a38ca2a78f7f19453b6325abf1449ac410175526afb72fc3b5ae91c1459183120422c79d2290c047d433989a016c514e6a844744dc8860bf0bc985fb987830810253886c0c4598e60c3ab1728e73b62196a7088aeee85dd502d7160ccfbbf086cbbc3e0eff4de887"
+        },
+        "sourceMaterialId": "rsa-3072-primary-01"
+      },
+      "canonicalEncoding": "o:3:s:7:messageu:33:5061706572203420506861736520432063616e6f6e6963616c206d657373616765s:9:signatureu:384:4f4865eaaa49c30236b548299e55b61fc3519a801659a34d7ad3a7a25849263ce9344945f2fa4e33a4dad9047657645cf6171aa4cd03ce1929b05fb75039f4ee14f0b234b73425b347ebb7e199a3628557b93ba32b5ff6342483442cb31cd09fae5179cbc15ec9cb359ad0a97360214b260b35bb910523ee8c0766c83a37866be0396894ca590e7c606f4ef6aa02328c427b9e1eb39cfec088df9fdbe158f0fc3e223e63ee0603bd95fc710d45b5bafcc4bdda37c37ffaf2dc65a1727522dfd3c8bf104fbaca52d796d8f58c854ce458c5790531921ae5a716a170920df1fb419c5c24cb0b25ba5769240a2ef40f2dca9876000a8edce81cf5f1a6923f9f549987fc80e101d384e6b6a9df28074b8288ee5cc6f107af7919a38ca2a78f7f19453b6325abf1449ac410175526afb72fc3b5ae91c1459183120422c79d2290c047d433989a016c514e6a844744dc8860bf0bc985fb987830810253886c0c4598e60c3ab1728e73b62196a7088aeee85dd502d7160ccfbbf086cbbc3e0eff4de887s:16:sourceMaterialIds:19:rsa-3072-primary-01",
+      "sha256": "3858bde4e27b33b4c1783e22d5fc8244a403743e8d1b28bce1a8dbea52c98597",
+      "provenance": {
+        "origin": "generated-during-m3",
+        "generator": "scripts/generate-second-pss-signature.ts",
+        "generatorVersion": "M3.2.4b-2.8",
+        "sourceMaterialIds": [
+          "rsa-3072-primary-01",
+          "pss-valid-signature-01"
+        ],
+        "createdAt": "2026-09-06T18:39:40.833Z"
+      }
+    },
+    {
+      "materialId": "gcm-sdk-artifact-general-01",
+      "materialType": "gcm-valid-artifact",
+      "schemaVersion": "1.0",
+      "value": {
+        "ciphertext": {
+          "__bytes__": "0100ca0e84434722e8fe1e9efd8cb930a6f514bc6f674fac1182daea5735a2969fb6b970dcb6d66359e6081b8efe668b8a12212f4a16fa3359a55c550c00deea"
+        },
+        "sourceMaterialId": "aes-phasec-primary-01"
+      },
+      "canonicalEncoding": "o:2:s:10:ciphertextu:64:0100ca0e84434722e8fe1e9efd8cb930a6f514bc6f674fac1182daea5735a2969fb6b970dcb6d66359e6081b8efe668b8a12212f4a16fa3359a55c550c00deeas:16:sourceMaterialIds:21:aes-phasec-primary-01",
+      "sha256": "45c12c779860283193cccafa0d64a460c586d7029f02863d4fee619c6f410797",
+      "qualification": "sdk-aead-artifact",
+      "provenance": {
+        "origin": "generated-during-m3",
+        "generator": "scripts/generate-gcm-sdk-artifacts.ts",
+        "generatorVersion": "M3.2.4b-2.13",
+        "sourceMaterialIds": [
+          "aes-phasec-primary-01"
+        ],
+        "createdAt": "2026-09-06T19:48:06.331Z"
+      }
+    },
+    {
+      "materialId": "gcm-sdk-artifact-ctlen-01",
+      "materialType": "gcm-valid-artifact",
+      "schemaVersion": "1.0",
+      "value": {
+        "ciphertext": {
+          "__bytes__": "0100ca0e84434722e8fe1e9efd8cb021b0e277a50c6374ba0397d798419d28aa7d263c4bc6fb5ed2bc5d21bdac"
+        },
+        "sourceMaterialId": "aes-phasec-primary-01"
+      },
+      "canonicalEncoding": "o:2:s:10:ciphertextu:45:0100ca0e84434722e8fe1e9efd8cb021b0e277a50c6374ba0397d798419d28aa7d263c4bc6fb5ed2bc5d21bdacs:16:sourceMaterialIds:21:aes-phasec-primary-01",
+      "sha256": "dd6f4309d7933c1d67988131dd8127d0fd45bb2d333bcd42dd140130a4c08da7",
+      "qualification": "sdk-aead-artifact",
+      "provenance": {
+        "origin": "generated-during-m3",
+        "generator": "scripts/generate-gcm-sdk-artifacts.ts",
+        "generatorVersion": "M3.2.4b-2.13",
+        "sourceMaterialIds": [
+          "aes-phasec-primary-01"
+        ],
+        "createdAt": "2026-09-06T19:48:06.331Z"
+      }
+    }
+  ],
+  "derivedArtifacts": [
+    {
+      "artifactId": "ec-p256-spki-derived-01",
+      "sourceMaterialId": "ec-p256-primary-01",
+      "derivation": "encode-spki",
+      "expectedSha256": "527133b758b3924ce34227efe6e3bdac6d4a73b67359395787dc58dc2eb96619"
+    },
+    {
+      "artifactId": "ec-p256-pkcs8-derived-01",
+      "sourceMaterialId": "ec-p256-primary-01",
+      "derivation": "encode-pkcs8",
+      "expectedSha256": "d486ddc7fe11e7b1f371a61f17e32cadd73ce41e43028da002dbc84ce4944df2"
+    },
+    {
+      "artifactId": "rsa-3072-spki-derived-01",
+      "sourceMaterialId": "rsa-3072-primary-01",
+      "derivation": "encode-spki",
+      "expectedSha256": "b3a31e186608108e4fb0fa35f5b1403c8a8955ea0eceeb80ed47e59f8bde2134"
+    },
+    {
+      "artifactId": "rsa-3072-private-key-info-derived-01",
+      "sourceMaterialId": "rsa-3072-primary-01",
+      "derivation": "encode-private-key-info",
+      "expectedSha256": "e654a01bea26f6b2f710ebf0b92a70e2d75b124b89219746e7d060514a8174e2"
+    }
+  ]
+}
