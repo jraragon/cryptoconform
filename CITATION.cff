@@ -11,6 +11,11 @@ authors:
     orcid: "https://orcid.org/0000-0001-7292-610X"
     affiliation: "Universidad Internacional de La Rioja (UNIR); Universidad de Salamanca (USAL)"
 
+  - family-names: "Fernández-Díaz"
+    given-names: "Julia"
+    orcid: "https://orcid.org/0009-0007-2419-2405"
+    affiliation: "Universidad de Oviedo, Spain"
+
   - family-names: "Celestino"
     given-names: "Teresa"
     orcid: "https://orcid.org/0000-0003-3984-7623"
@@ -20,11 +25,6 @@ authors:
     given-names: "Diego"
     orcid: "https://orcid.org/0000-0001-8424-5395"
     affiliation: "AIR Institute, Salamanca, Spain"
-
-  - family-names: "Rodríguez González"
-    given-names: "Sara"
-    orcid: "https://orcid.org/0000-0002-3081-5177"
-    affiliation: "Universidad de Salamanca (USAL), Spain"
 
   - family-names: "Zato"
     given-names: "Carolina"
